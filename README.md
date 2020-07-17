@@ -1,2 +1,5 @@
 # testproject-python-sdk-example
-Example Tests using the TestProject Python SDK
+This repository contains Web UI tests that use the
+[TestProject Python SDK](https://github.com/testproject-io/python-sdk).
+
+[TestProject](https://testproject.io/)

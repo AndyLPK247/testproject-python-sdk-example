@@ -88,3 +88,12 @@ def search_page(browser):
 @pytest.fixture
 def result_page(browser):
   return DuckDuckGoResultPage(browser)
+
+
+# ------------------------------------------------------------
+# pytest-bdd Hooks
+# ------------------------------------------------------------
+
+def pytest_bdd_after_step(request, feature, scenario, step, step_func):
+  browser = request.getfixturevalue('browser')
+  browser.report().step(description=str(step), message=str(step), passed=True, screenshot=True)

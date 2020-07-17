@@ -1,6 +1,6 @@
 {
-  "browser": "Firefox",
+  "browser": "Headless Chrome",
   "implicit_wait": 10,
   "testproject_projectname": "TestProject Python SDK Example",
-  "testproject_token": "FG3vjtoKJqzzovONjPDJYpSGyOlv7PTtqUpUZXV1Wvw1"
+  "testproject_token": ""
 }
