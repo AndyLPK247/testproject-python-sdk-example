@@ -9,18 +9,13 @@ They test searches on the DuckDuckGo website.
 
 import pytest
 
-from pages.result import DuckDuckGoResultPage
-from pages.search import DuckDuckGoSearchPage
-
 
 # ------------------------------------------------------------
 # Tests
 # ------------------------------------------------------------
 
 @pytest.mark.parametrize('phrase', ['panda', 'python', 'polar bear'])
-def test_basic_duckduckgo_search(browser, phrase):
-  search_page = DuckDuckGoSearchPage(browser)
-  result_page = DuckDuckGoResultPage(browser)
+def test_basic_duckduckgo_search(search_page, result_page, phrase):
   
   # Given the DuckDuckGo home page is displayed
   search_page.load()

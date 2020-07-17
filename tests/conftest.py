@@ -9,12 +9,14 @@ This module contains shared fixtures.
 import json
 import pytest
 
+from pages.result import DuckDuckGoResultPage
+from pages.search import DuckDuckGoSearchPage
 from selenium.webdriver import ChromeOptions
 from src.testproject.sdk.drivers import webdriver
 
 
 # ------------------------------------------------------------
-# Fixtures
+# Config Fixture
 # ------------------------------------------------------------
 
 @pytest.fixture
@@ -34,6 +36,10 @@ def config(scope='session'):
   # Return config so it can be used
   return config
 
+
+# ------------------------------------------------------------
+# Browser Fixture
+# ------------------------------------------------------------
 
 @pytest.fixture
 def browser(config):
@@ -68,3 +74,17 @@ def browser(config):
 
   # Quit the WebDriver instance for the cleanup
   b.quit()
+
+
+# ------------------------------------------------------------
+# Page Object Fixtures
+# ------------------------------------------------------------
+
+@pytest.fixture
+def search_page(browser):
+  return DuckDuckGoSearchPage(browser)
+
+
+@pytest.fixture
+def result_page(browser):
+  return DuckDuckGoResultPage(browser)
