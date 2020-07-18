@@ -1,5 +1,5 @@
 {
-  "browser": "Headless Chrome",
+  "browser": "Chrome",
   "implicit_wait": 10,
   "testproject_projectname": "TestProject Python SDK Example",
   "testproject_token": ""
