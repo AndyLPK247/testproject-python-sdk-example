@@ -57,3 +57,13 @@ You can provide path arguments to filter the tests to execute.
 For example, `pytest -m pytest tests/traditional`
 will execute only the traditional-style tests and not the BDD-style tests.
 Once tests complete, their results should appear in the TestProject Reports dashboard online.
+
+
+## Resources
+
+* TestProject
+  * [Home page](https://testproject.io/)
+  * [Documentation](https://docs.testproject.io/)
+  * [Python SDK GitHub repository](https://github.com/testproject-io/python-sdk)
+* [Python.org](https://www.python.org/)
+* [Automation Panda blog](https://automationpanda.com)
