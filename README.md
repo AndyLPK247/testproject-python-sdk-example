@@ -1,6 +1,8 @@
 # testproject-python-sdk-example
 This repository contains example Web UI tests that use the
 [TestProject Python SDK](https://github.com/testproject-io/python-sdk).
+It is the companion project for my tutorial,
+[Test-Driving TestProject's New Python SDK](https://automationpanda.com/2020/07/21/test-driving-testprojects-new-python-sdk/).
 
 
 ## What is Test Project?
@@ -61,9 +63,10 @@ Once tests complete, their results should appear in the TestProject Reports dash
 
 ## Resources
 
-* TestProject
-  * [Home page](https://testproject.io/)
+* [TestProject](https://testproject.io/)
   * [Documentation](https://docs.testproject.io/)
   * [Python SDK GitHub repository](https://github.com/testproject-io/python-sdk)
-* [Python.org](https://www.python.org/)
+  * [Getting Started with TestProject Python SDK](https://blog.testproject.io/2020/07/15/getting-started-with-testproject-python-sdk/)
 * [Automation Panda blog](https://automationpanda.com)
+  * [Test-Driving TestProject's New Python SDK](https://automationpanda.com/2020/07/21/test-driving-testprojects-new-python-sdk/)
+* [Python.org](https://www.python.org/)
